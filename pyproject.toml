@@ -28,6 +28,7 @@ prerelease = "allow"
 # Comment-in to activate local development path to the MSAF package
 #[tool.uv.sources]
 #agentic-layer-sdk-msaf = { path = "../sdk-python/msaf", editable = true }
+#agentic-layer-sdk = { path = "../sdk-python/shared", editable = true }
 
 
 [tool.ruff]

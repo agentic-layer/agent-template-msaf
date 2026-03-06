@@ -1,6 +1,7 @@
 import os
 
 from agent_framework import Agent
+from agenticlayer.msaf import create_metrics_middleware
 from agenticlayer.msaf.agent_to_a2a import to_a2a
 from agenticlayer.msaf.client import create_openai_client
 from agenticlayer.msaf.otel import setup_otel
@@ -30,6 +31,7 @@ app = to_a2a(
         ),
         name=os.environ.get("AGENT_NAME", "root_agent"),
         instructions=os.environ.get("AGENT_INSTRUCTION", ""),
+        middleware=create_metrics_middleware(),
     ),
     name=os.environ.get("AGENT_NAME", "root_agent"),
     description=os.environ.get("AGENT_DESCRIPTION", ""),
