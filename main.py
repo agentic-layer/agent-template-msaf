@@ -1,10 +1,10 @@
 import os
 
 from agent_framework import Agent
-from agenticlayer.config import parse_sub_agents, parse_tools
 from agenticlayer.msaf.agent_to_a2a import to_a2a
 from agenticlayer.msaf.client import create_openai_client
 from agenticlayer.msaf.otel import setup_otel
+from agenticlayer.shared.config import parse_sub_agents, parse_tools
 from dotenv import load_dotenv
 
 from loguru_config import setup_logging
