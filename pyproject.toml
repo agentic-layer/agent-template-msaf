@@ -23,7 +23,7 @@ include = [
 ]
 
 [tool.uv]
-prerelease = "allow"
+prerelease = "if-necessary-or-explicit"
 
 # Comment-in to activate local development path to the MSAF package
 #[tool.uv.sources]
