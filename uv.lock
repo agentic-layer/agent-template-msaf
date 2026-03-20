@@ -69,7 +69,7 @@ dev = [
 
 [[package]]
 name = "agentic-layer-sdk"
-version = "0.14.0"
+version = "0.14.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "a2a-sdk" },
@@ -82,23 +82,23 @@ dependencies = [
     { name = "pydantic" },
     { name = "starlette" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/15/1c/760615d897c1fe0e10fb0b92f925700429b67acb5f99598acdf14cba96cd/agentic_layer_sdk-0.14.0.tar.gz", hash = "sha256:0f79fe9e09ffce1f20011691e84cc3c8ca6b9b96e0811b0feaf4c34a0e18aa06", size = 45366, upload-time = "2026-03-20T15:00:46.358Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6b/0e/60fab7a0fc0d85b698c81a5e3d0da3cf6c8ad366b8bb657785fabb719f94/agentic_layer_sdk-0.14.1.tar.gz", hash = "sha256:60244f8459abf8987f6617638f302d284ac699ac1a562600630a94ab36e0a1b7", size = 45365, upload-time = "2026-03-20T15:48:11.724Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/db/6c/ea8637051d53e484c224e423db9a02e8b9628b44a06618d6d20d9f43d8a4/agentic_layer_sdk-0.14.0-py3-none-any.whl", hash = "sha256:f5924c8a2020548f25d79eb8085588e09f3543e673c5a49904eefaeda2590f2d", size = 7510, upload-time = "2026-03-20T15:00:45.104Z" },
+    { url = "https://files.pythonhosted.org/packages/53/f2/0fc6bebb1bdae19f3230e8be0f710bdee7d2605da222ebd3f42a3f137910/agentic_layer_sdk-0.14.1-py3-none-any.whl", hash = "sha256:b24d543603bf9f5c29ff650d3c91429b63cc69268f1f5aa8056c6ed9360be9f1", size = 7510, upload-time = "2026-03-20T15:48:10.548Z" },
 ]
 
 [[package]]
 name = "agentic-layer-sdk-msaf"
-version = "0.14.0"
+version = "0.14.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "agent-framework-core" },
     { name = "agentic-layer-sdk" },
     { name = "httpx-retries" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b5/c6/e0f5fef8ca1128253d6c641175dc4db759416e949950f0ef9286af052603/agentic_layer_sdk_msaf-0.14.0.tar.gz", hash = "sha256:ac97f5c918352caee29ded35cf8988ce5452077992a377f2eb6abf36f8ad4645", size = 83923, upload-time = "2026-03-20T15:01:16.449Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6d/89/2cea05b9834c14975ab98a95f21d013254135710fd5cc45125e939dd4ad3/agentic_layer_sdk_msaf-0.14.1.tar.gz", hash = "sha256:a0f48b2426f8ae900df70baf75a8068bc7ee39956bcf5a9f171cb23a5b1610a4", size = 84037, upload-time = "2026-03-20T15:48:50.525Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/94/94/2a2d90a59b1ff28fefa0c4270508fedff8a88479845e9681d7815de55685/agentic_layer_sdk_msaf-0.14.0-py3-none-any.whl", hash = "sha256:d1f577fec46c4e85ba7581159280bf4ea96b3a394ccc5b29e8db58ad8d6c6e98", size = 10779, upload-time = "2026-03-20T15:01:15.264Z" },
+    { url = "https://files.pythonhosted.org/packages/bf/a6/93b6a987f35fac11a8260ac81e8a1bb8589d318dedda2cc597791e3c40a2/agentic_layer_sdk_msaf-0.14.1-py3-none-any.whl", hash = "sha256:f09a4c25ed5ef1d5df811331e2a8ad8b822b622e861a6102ea90f5d91e8024bf", size = 10902, upload-time = "2026-03-20T15:48:49.521Z" },
 ]
 
 [[package]]
