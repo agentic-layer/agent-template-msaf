@@ -19,21 +19,20 @@ It is based on https://github.com/agentic-layer/sdk-python.
 
 Available environment variables:
 
-| Variable                 | Description                               | Default                              | Example                                                                                                        |
-|--------------------------|-------------------------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| `AGENT_NAME`             | Name of the root agent                    | -                                    | `my_helper`                                                                                                    |
-| `AGENT_DESCRIPTION`      | Agent description                         | -                                    | `A helpful assistant agent`                                                                                    |
-| `AGENT_INSTRUCTION`      | Agent system instruction                  | -                                    | `You are a helpful assistant`                                                                                  |
-| `AGENT_MODEL`            | Model ID to use                           | `None` (uses `OPENAI_CHAT_MODEL_ID`) | `gpt-4o`                                                                                                       |
-| `LITELLM_PROXY_API_BASE` | Base URL of the OpenAI-compatible gateway | `None`                               | `http://litellm-proxy:4000`                                                                                    |
-| `LITELLM_PROXY_API_KEY`  | API key for the gateway                   | `None`                               | `sk-my-key`                                                                                                    |
-| `OPENAI_CHAT_MODEL_ID`   | Model name (fallback for `AGENT_MODEL`)   | `None`                               | `gpt-4o`                                                                                                       |
-| `SUB_AGENTS`             | JSON configuration for sub-agents         | `{}`                                 | `{"weather_agent":{"url":"http://localhost:8002/.well-known/agent-card.json","interaction_type":"tool_call"}}` |
-| `AGENT_TOOLS`            | JSON configuration for MCP tools          | `{}`                                 | `{"web_fetch":{"url":"https://remote.mcpservers.org/fetch/mcp"}}`                                              |
-| `AGENT_A2A_RPC_URL`      | RPC URL inserted into the A2A agent card  | `None`                               | `https://my-agent.example.com/a2a`                                                                             |
-| `LOGLEVEL`               | Log level                                 | `INFO`                               | `DEBUG`                                                                                                        |
-| `LOG_FORMAT`             | Log output format                         | `Text`                               | `JSON`                                                                                                         |
-| `AGENT_OTEL_ENABLED`     | Enable OpenTelemetry                      | `true`                               | `true`                                                                                                         |
+| Variable                 | Description                               | Default            | Example                                                                                                        |
+|--------------------------|-------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------|
+| `AGENT_NAME`             | Name of the root agent                    | -                  | `my_helper`                                                                                                    |
+| `AGENT_DESCRIPTION`      | Agent description                         | -                  | `A helpful assistant agent`                                                                                    |
+| `AGENT_INSTRUCTION`      | Agent system instruction                  | -                  | `You are a helpful assistant`                                                                                  |
+| `AGENT_MODEL`            | Model ID to use                           | `gemini-2.5-flash` | `gpt-4o`                                                                                                       |
+| `LITELLM_PROXY_API_BASE` | Base URL of the OpenAI-compatible gateway | `None`             | `http://litellm-proxy:4000`                                                                                    |
+| `LITELLM_PROXY_API_KEY`  | API key for the gateway                   | `None`             | `sk-my-key`                                                                                                    |
+| `SUB_AGENTS`             | JSON configuration for sub-agents         | `{}`               | `{"weather_agent":{"url":"http://localhost:8002/.well-known/agent-card.json","interaction_type":"tool_call"}}` |
+| `AGENT_TOOLS`            | JSON configuration for MCP tools          | `{}`               | `{"web_fetch":{"url":"https://remote.mcpservers.org/fetch/mcp"}}`                                              |
+| `AGENT_A2A_RPC_URL`      | RPC URL inserted into the A2A agent card  | `None`             | `https://my-agent.example.com/a2a`                                                                             |
+| `LOGLEVEL`               | Log level                                 | `INFO`             | `DEBUG`                                                                                                        |
+| `LOG_FORMAT`             | Log output format                         | `Text`             | `JSON`                                                                                                         |
+| `AGENT_OTEL_ENABLED`     | Enable OpenTelemetry                      | `true`             | `true`                                                                                                         |
 
 For detailed configuration of sub-agents and MCP tools, refer to
 the [Agentic Layer SDK](https://github.com/agentic-layer/sdk-python/blob/main/msaf/README.md#configuration)
@@ -47,9 +46,8 @@ docker run \
   -e AGENT_NAME="my_helper" \
   -e AGENT_DESCRIPTION="A helpful assistant agent" \
   -e AGENT_INSTRUCTION="You are a helpful assistant" \
-  -e OPENAI_BASE_URL="https://generativelanguage.googleapis.com/v1beta/openai/" \
-  -e OPENAI_API_KEY="your-google-api-key" \
-  -e OPENAI_CHAT_MODEL_ID="gemini-2.5-flash" \
+  -e LITELLM_PROXY_API_BASE="https://generativelanguage.googleapis.com/v1beta/openai/" \
+  -e LITELLM_PROXY_API_KEY="your-google-api-key" \
   -p 8000:8000 \
   ghcr.io/agentic-layer/agent-template-msaf:latest
 ```
