@@ -27,7 +27,7 @@ http-server = [
 
 [[package]]
 name = "agent-framework-core"
-version = "1.0.1"
+version = "1.2.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "opentelemetry-api" },
@@ -35,9 +35,9 @@ dependencies = [
     { name = "python-dotenv" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2a/3d/371e57a74ecd4fc551d458bd234d7591c052b467cac21e8805cb519a4187/agent_framework_core-1.0.1.tar.gz", hash = "sha256:6ace9fa8bee9d2e8556c28ff767d89b8e0a0a734246dcca4a196d0b0bc5cedb0", size = 285179, upload-time = "2026-04-10T03:29:28.193Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/99/6a/dae422906f3a664a54c079238ba97a7d1be6958782e341381ea0db228007/agent_framework_core-1.2.2.tar.gz", hash = "sha256:486ddecbdc0c47acf890b2230e5986beb1c5dc8cca39d8faeb008013ba7aa0e5", size = 309480, upload-time = "2026-04-29T08:55:57.206Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2e/11/a460d6656257c4302deb33724f29a52059bae193758ded7571fb576b26cb/agent_framework_core-1.0.1-py3-none-any.whl", hash = "sha256:8305fadb78adb9b625cda0ba8188bcb76ce01a2aa64eed937f8c9fb384043bc0", size = 323596, upload-time = "2026-04-10T03:31:01.698Z" },
+    { url = "https://files.pythonhosted.org/packages/68/1d/2aeada01b7c0e72fd363332c8f283eea229f3b044b816c8c0ae3cb8cf517/agent_framework_core-1.2.2-py3-none-any.whl", hash = "sha256:67c1eb8a22cb1d710c478cf2f4dd278ee9dae3ea5643a4d6e63256fdf3a121ee", size = 348302, upload-time = "2026-04-29T08:55:55.895Z" },
 ]
 
 [[package]]
@@ -68,7 +68,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "agentic-layer-sdk-msaf", specifier = ">=0.15.0" }]
+requires-dist = [{ name = "agentic-layer-sdk-msaf", specifier = ">=0.17.0" }]
 
 [package.metadata.requires-dev]
 dev = [
@@ -78,7 +78,7 @@ dev = [
 
 [[package]]
 name = "agentic-layer-sdk"
-version = "0.16.0"
+version = "0.17.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "a2a-sdk", extra = ["http-server"] },
@@ -91,16 +91,17 @@ dependencies = [
     { name = "pydantic" },
     { name = "starlette" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b6/97/66a4a4b8385510edec8b050512b641381074246a3fda5ebe2815164637af/agentic_layer_sdk-0.16.0.tar.gz", hash = "sha256:060b9908c80217a3a0e452fd408da530c66ff6f99805438cd8fab2f3a917d077", size = 46810, upload-time = "2026-04-10T14:16:56.792Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/81/7a/2adf40a11147137625b9f8276914a934a812913fe74c097ea228d3f1325a/agentic_layer_sdk-0.17.0.tar.gz", hash = "sha256:35d7d88fd4e32782a7584eaceb864d0df89a347d4da44b01f5ce274fdf9676a5", size = 47024, upload-time = "2026-05-05T11:43:27.155Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b6/e2/a6954bb660d4cd32f677792c3d1ea295ac522846a16b213fb35aa7803851/agentic_layer_sdk-0.16.0-py3-none-any.whl", hash = "sha256:aa427852c449f49e3292a66f9008c9f6bd175899bb3869ed3c040e43ed0efe7b", size = 7566, upload-time = "2026-04-10T14:16:55.415Z" },
+    { url = "https://files.pythonhosted.org/packages/05/b3/862260d185cd203de61fcf7b84d15886f11b836270468a58ae26ebf242db/agentic_layer_sdk-0.17.0-py3-none-any.whl", hash = "sha256:e9656110202089876fdbbab8dfa5136e3e349ea13652774f6b40658ea85c277f", size = 7565, upload-time = "2026-05-05T11:43:25.982Z" },
 ]
 
 [[package]]
 name = "agentic-layer-sdk-msaf"
-version = "0.16.0"
+version = "0.17.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "a2a-sdk" },
     { name = "agent-framework-core" },
     { name = "agent-framework-openai" },
     { name = "agentic-layer-sdk" },
@@ -112,9 +113,9 @@ dependencies = [
     { name = "opentelemetry-instrumentation-logging" },
     { name = "opentelemetry-instrumentation-starlette" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3a/18/a52c5f4941b5ef543b9a6bae3bbc108a97729336352826a5fffdf05e4b51/agentic_layer_sdk_msaf-0.16.0.tar.gz", hash = "sha256:a5c016cf11f99005ba4a2f804d4a35b6e0447b038afebde457259fdb2b9890b0", size = 83113, upload-time = "2026-04-10T14:17:29.1Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/32/53/4d591ca6e85141202fc2a0cc21871a60715191b49ec88a3317fb6a990e25/agentic_layer_sdk_msaf-0.17.0.tar.gz", hash = "sha256:f19a0065be6e38a2244b3aabad3a20c8bd6824fbe42008b6858f1ffe660fb815", size = 87206, upload-time = "2026-05-05T11:43:52.003Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b9/4e/b7ec8b90ae1fa325534b43f626e7968cf1a39e2c64d0e16886ffb7b30eda/agentic_layer_sdk_msaf-0.16.0-py3-none-any.whl", hash = "sha256:9658282ae1f36375f82c0d5a4af22caa78888e2e0426e4825ef715f37eaa1412", size = 9800, upload-time = "2026-04-10T14:17:27.899Z" },
+    { url = "https://files.pythonhosted.org/packages/c1/87/2e8ad27c197740a917d832e96a53ca5867ec6f977fcc01e32444f4764582/agentic_layer_sdk_msaf-0.17.0-py3-none-any.whl", hash = "sha256:13c0bf84675ec2074bc2ecddc2036bea00586f3323727dbdc8cea8275cb15208", size = 11355, upload-time = "2026-05-05T11:43:50.875Z" },
 ]
 
 [[package]]
@@ -333,7 +334,7 @@ wheels = [
 
 [[package]]
 name = "fastapi"
-version = "0.135.3"
+version = "0.136.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "annotated-doc" },
@@ -342,9 +343,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "typing-inspection" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f7/e6/7adb4c5fa231e82c35b8f5741a9f2d055f520c29af5546fd70d3e8e1cd2e/fastapi-0.135.3.tar.gz", hash = "sha256:bd6d7caf1a2bdd8d676843cdcd2287729572a1ef524fc4d65c17ae002a1be654", size = 396524, upload-time = "2026-04-01T16:23:58.188Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5d/45/c130091c2dfa061bbfe3150f2a5091ef1adf149f2a8d2ae769ecaf6e99a2/fastapi-0.136.1.tar.gz", hash = "sha256:7af665ad7acfa0a3baf8983d393b6b471b9da10ede59c60045f49fbc89a0fa7f", size = 397448, upload-time = "2026-04-23T16:49:44.046Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/84/a4/5caa2de7f917a04ada20018eccf60d6cc6145b0199d55ca3711b0fc08312/fastapi-0.135.3-py3-none-any.whl", hash = "sha256:9b0f590c813acd13d0ab43dd8494138eb58e484bfac405db1f3187cfc5810d98", size = 117734, upload-time = "2026-04-01T16:23:59.328Z" },
+    { url = "https://files.pythonhosted.org/packages/5a/ff/2e4eca3ade2c22fe1dea7043b8ee9dabe47753349eb1b56a202de8af6349/fastapi-0.136.1-py3-none-any.whl", hash = "sha256:a6e9d7eeada96c93a4d69cb03836b44fa34e2854accb7244a1ece36cd4781c3f", size = 117683, upload-time = "2026-04-23T16:49:42.437Z" },
 ]
 
 [[package]]
