@@ -68,7 +68,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "agentic-layer-sdk-msaf", specifier = ">=0.17.0" }]
+requires-dist = [{ name = "agentic-layer-sdk-msaf", specifier = ">=0.17.1" }]
 
 [package.metadata.requires-dev]
 dev = [
@@ -98,7 +98,7 @@ wheels = [
 
 [[package]]
 name = "agentic-layer-sdk-msaf"
-version = "0.17.0"
+version = "0.17.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "a2a-sdk" },
@@ -113,9 +113,9 @@ dependencies = [
     { name = "opentelemetry-instrumentation-logging" },
     { name = "opentelemetry-instrumentation-starlette" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/32/53/4d591ca6e85141202fc2a0cc21871a60715191b49ec88a3317fb6a990e25/agentic_layer_sdk_msaf-0.17.0.tar.gz", hash = "sha256:f19a0065be6e38a2244b3aabad3a20c8bd6824fbe42008b6858f1ffe660fb815", size = 87206, upload-time = "2026-05-05T11:43:52.003Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/8b/431e37dea56eb4a007b6fcce03920724ba09d738fecb8f4310b6abadacc8/agentic_layer_sdk_msaf-0.17.1.tar.gz", hash = "sha256:6f37ec1a5ec9affdae01622d61d30d551c60847202eefcc68559505456c2df3e", size = 87274, upload-time = "2026-05-05T12:45:39.622Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/87/2e8ad27c197740a917d832e96a53ca5867ec6f977fcc01e32444f4764582/agentic_layer_sdk_msaf-0.17.0-py3-none-any.whl", hash = "sha256:13c0bf84675ec2074bc2ecddc2036bea00586f3323727dbdc8cea8275cb15208", size = 11355, upload-time = "2026-05-05T11:43:50.875Z" },
+    { url = "https://files.pythonhosted.org/packages/dc/05/beac9f0502870a1e80b14355dcc53263bc81bae7eb8f097d99f1539ed560/agentic_layer_sdk_msaf-0.17.1-py3-none-any.whl", hash = "sha256:a3267b078dd7b176c004c9114992208e379d86c84340e1d6bce3fc8076d494b0", size = 11376, upload-time = "2026-05-05T12:45:38.386Z" },
 ]
 
 [[package]]

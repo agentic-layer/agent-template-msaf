@@ -3,7 +3,7 @@ name = "agent-template-msaf"
 version = "0.1.0"
 requires-python = ">=3.14,<3.15"
 dependencies = [
-    "agentic-layer-sdk-msaf>=0.17.0",
+    "agentic-layer-sdk-msaf>=0.17.1",
 ]
 
 [dependency-groups]
